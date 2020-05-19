@@ -95,7 +95,7 @@ public class DealsMapStepDefination {
 		driver.findElement(By.name("commission")).sendKeys(commission);	
 		
 		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();
-		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
+			
 		
 		//move to new deals page
 		driver.findElement(By.xpath("//a[contains(@href,'/deals')]")).click(); 	
@@ -106,6 +106,7 @@ public class DealsMapStepDefination {
 			
 	}
 
+	//Closing the browser 
 	@Then("^Close the browser$")
 	public void close_the_browser()  {
 		

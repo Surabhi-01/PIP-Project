@@ -10,6 +10,8 @@ Then User is on HomePage
 Then user moves to new deal page 
 Then user enters deal details "<title>" and "<amount>" and "<probability>" and "<commission>"
 Then Close the browser 
+
+#comment
 	
 Examples:
 	
