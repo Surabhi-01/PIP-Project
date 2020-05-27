@@ -12,7 +12,7 @@ Then user enters deal details "<title>" and "<amount>" and "<probability>" and "
 Then Close the browser 
 
 #comment
-	
+	// Test Comment
 Examples:
 	
 	|username | password | title | amount | probability | commission |
