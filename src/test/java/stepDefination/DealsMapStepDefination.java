@@ -29,8 +29,8 @@ public class DealsMapStepDefination {
 
 	@Given("^user is already on Login page$")
 	public void user_is_already_on_Login_Page() {		
-		WebDriverManager.chromedriver().version("81.0.4044.69").setup();
-		System.getProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\Selenium\\chromedriver_win32 (2)\\chromedriver.exe");
+		WebDriverManager.chromedriver().version("83.0.4103.39").setup();
+		System.getProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\Selenium\\chromedriver_win32 (4)\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://freecrm.co.in/");
 		driver.manage().window().maximize();
