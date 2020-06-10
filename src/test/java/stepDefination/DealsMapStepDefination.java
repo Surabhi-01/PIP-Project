@@ -34,12 +34,12 @@ public class DealsMapStepDefination {
 		driver = new ChromeDriver();
 		driver.get("https://freecrm.co.in/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 
 	@When("^Title of login page is Cogmento CRM$")
 	public void title_of_login_page_is_Cogmento_CRM() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		String title = null;
 		try {
 			title = driver.getTitle();
@@ -56,11 +56,13 @@ public class DealsMapStepDefination {
 		driver.findElement(By.xpath("//span[contains(text(),'Log In')]")).click();
 		driver.findElement(By.name("email")).sendKeys(username);
 		driver.findElement(By.name("password")).sendKeys(password);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
 		}
 
 	@Then("^User clicks on Login button$")
 	public void user_clicks_on_Login_button() {
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		WebElement loginBtn = driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", loginBtn);
@@ -77,9 +79,11 @@ public class DealsMapStepDefination {
 	
 	@Then("^user moves to new deal page$")
 	public void user_moves_to_new_deal_page() throws Throwable {
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click(); 	
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
-		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 	
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
+		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
 	}
 	   
@@ -87,13 +91,14 @@ public class DealsMapStepDefination {
 	public void user_enters_deal_details_and_and_and(String title,String amount, 
 			String probability, String commission) throws Exception {
 	   
-		driver.findElement(By.name("title")).sendKeys(title);		
+		driver.findElement(By.name("title")).sendKeys(title);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.name("amount")).sendKeys(amount);	
 		
 		driver.findElement(By.name("probability")).sendKeys(probability);
 		
 		driver.findElement(By.name("commission")).sendKeys(commission);	
-		
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();
 			
 		
