@@ -81,9 +81,19 @@ public class DealsMapStepDefination {
 	@Then("^user moves to new deal page$")
 	public void user_moves_to_new_deal_page() throws Throwable {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click(); 	
+		//driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click(); 	
+		
+		WebElement DealBtn = driver.findElement(By.xpath("//span[contains(text(),'Deals')]"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", DealBtn);
+		
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
-		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 
+		//driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 
+		
+		WebElement newBtn = driver.findElement(By.xpath("//button[contains(text(),'New')]"));
+				JavascriptExecutor js1 = (JavascriptExecutor) driver;
+				js1.executeScript("arguments[0].click();", newBtn);
+		
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
 	}
