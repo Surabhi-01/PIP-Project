@@ -74,18 +74,19 @@ public class DealsMapStepDefination {
 	public void user_is_on_HomePage() {
 		String title = driver.getTitle();
 		
-		Assert.assertEquals("Cogmento CRM", title);		
+		Assert.assertEquals("Cogmento CRM", title);	
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
 	
 	@Then("^user moves to new deal page$")
 	public void user_moves_to_new_deal_page() throws Throwable {
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		//driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click(); 	
 		
-		WebElement DealBtn = driver.findElement(By.xpath("//span[contains(text(),'Deals')]"));
+		driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click(); 	
+		
+		/*WebElement DealBtn = driver.findElement(By.xpath("//span[contains(text(),'Deals')]"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", DealBtn);
+		js.executeScript("arguments[0].click();", DealBtn);*/
 		
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
 		//driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 
@@ -94,7 +95,7 @@ public class DealsMapStepDefination {
 				JavascriptExecutor js1 = (JavascriptExecutor) driver;
 				js1.executeScript("arguments[0].click();", newBtn);
 		
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		
 		
 	}
 	   
@@ -116,7 +117,12 @@ public class DealsMapStepDefination {
 		//move to new deals page
 		driver.findElement(By.xpath("//a[contains(@href,'/deals')]")).click(); 	
 	
-		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 	
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
+		//driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 
+		
+		WebElement newBtn1 = driver.findElement(By.xpath("//button[contains(text(),'New')]"));
+				JavascriptExecutor js2 = (JavascriptExecutor) driver;
+				js2.executeScript("arguments[0].click();", newBtn1);
 		
 	
 			
