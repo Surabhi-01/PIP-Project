@@ -63,9 +63,10 @@ public class DealsMapStepDefination {
 	@Then("^User clicks on Login button$")
 	public void user_clicks_on_Login_button() {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		WebElement loginBtn = driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", loginBtn);
+		//WebElement loginBtn = driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']"));
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("arguments[0].click();", loginBtn);
+		driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']")).click();
 
 	}
 
