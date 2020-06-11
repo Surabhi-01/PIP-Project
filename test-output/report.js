@@ -291,8 +291,7 @@ formatter.match({
   "location": "DealsMapStepDefination.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefination.DealsMapStepDefination.user_enters_username_and_password(DealsMapStepDefination.java:57)\r\n\tat ✽.User enters \"surabhi.gutch@gmail.com\" and \"May@2020\"(C:/Users/HP/Desktop/Selenium/Project/src/test/java/features/DealsMap.feature:7)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User clicks on Login button",
@@ -302,7 +301,7 @@ formatter.match({
   "location": "DealsMapStepDefination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User is on HomePage",
@@ -312,7 +311,7 @@ formatter.match({
   "location": "DealsMapStepDefination.user_is_on_HomePage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user moves to new deal page",
@@ -322,7 +321,7 @@ formatter.match({
   "location": "DealsMapStepDefination.user_moves_to_new_deal_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user enters deal details \"test deal3\" and \"3000\" and \"70\" and \"40\"",
@@ -332,7 +331,7 @@ formatter.match({
   "location": "DealsMapStepDefination.user_enters_deal_details_and_and_and(String,String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Close the browser",
@@ -342,6 +341,6 @@ formatter.match({
   "location": "DealsMapStepDefination.close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });

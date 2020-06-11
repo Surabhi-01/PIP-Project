@@ -94,6 +94,7 @@ public class DealsMapStepDefination {
 		WebElement newBtn = driver.findElement(By.xpath("//button[contains(text(),'New')]"));
 				JavascriptExecutor js1 = (JavascriptExecutor) driver;
 				js1.executeScript("arguments[0].click();", newBtn);
+				
 		
 		
 		
@@ -104,7 +105,7 @@ public class DealsMapStepDefination {
 			String probability, String commission) throws Exception {
 	   
 		driver.findElement(By.name("title")).sendKeys(title);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.findElement(By.name("amount")).sendKeys(amount);	
 		
 		driver.findElement(By.name("probability")).sendKeys(probability);

@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11933425100,
+              "duration": 30169951600,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 21857500,
+              "duration": 61292900,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 4520210600,
+              "duration": 8594803300,
               "status": "passed"
             },
             "line": 7,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 99867100,
+              "duration": 476493800,
               "status": "passed"
             },
             "line": 8,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 12605500,
+              "duration": 19142500,
               "status": "passed"
             },
             "line": 9,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 3172388600,
+              "duration": 5186806300,
               "status": "passed"
             },
             "line": 10,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 1868205000,
+              "duration": 1972546200,
               "status": "passed"
             },
             "line": 11,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 2970564100,
+              "duration": 2263939600,
               "status": "passed"
             },
             "line": 12,
@@ -146,7 +146,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9789588900,
+              "duration": 11408068200,
               "status": "passed"
             },
             "line": 5,
@@ -158,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 25528900,
+              "duration": 26226400,
               "status": "passed"
             },
             "line": 6,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 5730831700,
+              "duration": 4341421700,
               "status": "passed"
             },
             "line": 7,
@@ -192,7 +192,7 @@
           },
           {
             "result": {
-              "duration": 104407000,
+              "duration": 114015700,
               "status": "passed"
             },
             "line": 8,
@@ -204,7 +204,7 @@
           },
           {
             "result": {
-              "duration": 17253100,
+              "duration": 15312600,
               "status": "passed"
             },
             "line": 9,
@@ -216,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 2318276200,
+              "duration": 3006776900,
               "status": "passed"
             },
             "line": 10,
@@ -228,7 +228,7 @@
           },
           {
             "result": {
-              "duration": 1794545800,
+              "duration": 1727435400,
               "status": "passed"
             },
             "line": 11,
@@ -258,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 1496647300,
+              "duration": 1604926500,
               "status": "passed"
             },
             "line": 12,
@@ -280,7 +280,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10401458100,
+              "duration": 9123636700,
               "status": "passed"
             },
             "line": 5,
@@ -292,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 15056300,
+              "duration": 13170400,
               "status": "passed"
             },
             "line": 6,
@@ -304,9 +304,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat stepDefination.DealsMapStepDefination.user_enters_username_and_password(DealsMapStepDefination.java:57)\r\n\tat ✽.User enters \"surabhi.gutch@gmail.com\" and \"May@2020\"(C:/Users/HP/Desktop/Selenium/Project/src/test/java/features/DealsMap.feature:7)\r\n",
-              "duration": 25107044800,
-              "status": "failed"
+              "duration": 5527028000,
+              "status": "passed"
             },
             "line": 7,
             "name": "User enters \"surabhi.gutch@gmail.com\" and \"May@2020\"",
@@ -327,7 +326,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 78014700,
+              "status": "passed"
             },
             "line": 8,
             "name": "User clicks on Login button",
@@ -338,7 +338,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 14041600,
+              "status": "passed"
             },
             "line": 9,
             "name": "User is on HomePage",
@@ -349,7 +350,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3316551900,
+              "status": "passed"
             },
             "line": 10,
             "name": "user moves to new deal page",
@@ -360,7 +362,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1687674700,
+              "status": "passed"
             },
             "line": 11,
             "name": "user enters deal details \"test deal3\" and \"3000\" and \"70\" and \"40\"",
@@ -389,7 +392,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 9959988200,
+              "status": "passed"
             },
             "line": 12,
             "name": "Close the browser",

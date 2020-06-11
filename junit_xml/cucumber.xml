@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="81.528827">
-<testcase classname="Deal data creation" name="Cogmento CRM Create a new deal scenario" time="24.639158">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="100.89527">
+<testcase classname="Deal data creation" name="Cogmento CRM Create a new deal scenario" time="48.905643">
 <system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
 Then User enters "surabhi.gutch@gmail.com" and "May@2020"...................passed
@@ -10,7 +10,7 @@ Then user enters deal details "test deal1" and "1000" and "50" and "20".....pass
 Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Deal data creation" name="Cogmento CRM Create a new deal scenario 2" time="21.28845">
+<testcase classname="Deal data creation" name="Cogmento CRM Create a new deal scenario 2" time="22.259157">
 <system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
 Then User enters "surabhi.gutch@gmail.com" and "May@2020"...................passed
@@ -21,20 +21,15 @@ Then user enters deal details "test deal2" and "2000" and "60" and "30".....pass
 Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Deal data creation" name="Cogmento CRM Create a new deal scenario 3" time="35.601219">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepDefination.DealsMapStepDefination.user_enters_username_and_password(DealsMapStepDefination.java:57)&#13;&#10;&#9;at ✽.User enters &quot;surabhi.gutch@gmail.com&quot; and &quot;May@2020&quot;(C:/Users/HP/Desktop/Selenium/Project/src/test/java/features/DealsMap.feature:7)&#13;&#10;"><![CDATA[Given user is already on Login page.........................................passed
+<testcase classname="Deal data creation" name="Cogmento CRM Create a new deal scenario 3" time="29.73047">
+<system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
-Then User enters "surabhi.gutch@gmail.com" and "May@2020"...................failed
-Then User clicks on Login button............................................skipped
-Then User is on HomePage....................................................skipped
-Then user moves to new deal page............................................skipped
-Then user enters deal details "test deal3" and "3000" and "70" and "40".....skipped
-Then Close the browser......................................................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at stepDefination.DealsMapStepDefination.user_enters_username_and_password(DealsMapStepDefination.java:57)
-	at ✽.User enters "surabhi.gutch@gmail.com" and "May@2020"(C:/Users/HP/Desktop/Selenium/Project/src/test/java/features/DealsMap.feature:7)
-]]></failure>
+Then User enters "surabhi.gutch@gmail.com" and "May@2020"...................passed
+Then User clicks on Login button............................................passed
+Then User is on HomePage....................................................passed
+Then user moves to new deal page............................................passed
+Then user enters deal details "test deal3" and "3000" and "70" and "40".....passed
+Then Close the browser......................................................passed
+]]></system-out>
 </testcase>
 </testsuite>
